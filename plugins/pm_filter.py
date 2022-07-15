@@ -888,6 +888,7 @@ async def auto_filter(client, msg, spoll=False):
   
     await asyncio.sleep(60)
     await fmsg.delete()
+    await message.delete()
 
 async def advantage_spell_chok(msg):
     query = re.sub(
